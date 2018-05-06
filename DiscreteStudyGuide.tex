@@ -59,6 +59,7 @@ Discrete Final} %if necessary, replace with your course title
 Examples of a proposition:
 
 $p(x) = x$ is a cat.
+
 $q(x) = x$ has fur.
 
 \begin{enumerate}
@@ -66,16 +67,114 @@ $q(x) = x$ has fur.
 \item \underline{Conjunction}, $p(x) \wedge q(x)$, changing the statement to say $x$ is a cat and it has fur.
 \item \underline{Disjunction}, $p(x) \lor q(x)$, changing the statement to say $x$ is a cat and it does not have fur.
 \item \underline{Exclusive Or},  $p(x) \oplus q(x)$, where the statement is true only when exactly one of $p(x)$ or $q(x)$ is true, otherwise the statement is false.
-\item \underline{Conditional Statement}
+\item \underline{Conditional Statement}, $p(x) \rightarrow q(x)$,  where the statement is read "If p, then q" the statement is false when p is true and q is false, otherwise the statement is true.
+\item \underline{Bi-Conditional Statement}, $p(x) \leftrightarrow q(x)$, where the statement is true if the values of p and q match. The statement is read as any of the following;
+	\begin{enumerate}
+	\item "p if and only if q"
+	\item "p is necessary and sufficient for q"
+	\item "if p then q, and conversely"
+	\item "p iff q"
+	\end{enumerate}
 \end{enumerate}
 
-\subsection{Trigonometry Derivatives}
+Definitions
+\begin{enumerate}
+\item \underline{Hypothesis} - p is considered the hypothesis in the statement $p(x) \rightarrow q(x)$.
+\item \underline{Conclusion}- q is considered the conclusion in the statement $p(x) \rightarrow q(x)$.
+\item \underline{Bi-Implications} - Another way to express "Bi-Conditional statements"
+\end{enumerate}
+
+\pagebreak
+
+\subsection{Propositional Equivalences}
 
 \begin{enumerate}
-\item 
+\item \underline{Logically Equivalent}, $p(x) \equiv q(x)$, when two statements share the same truth values then the statement is said to be logically equivalent.
+\item \underline{Identity Laws} 
+\[
+	p(x) \wedge T \equiv p(x)
+\]
+\[
+	p(x) \lor F \equiv p(x)
+\]
+
+\item \underline{Domination Laws}
+\[
+	p(x) \lor T \equiv T 
+\]
+\[
+	p(x) \wedge F \equiv F
+\]
+
+\item \underline{Idempotent Laws}
+\[
+	p(x) \lor p(x) \equiv p(x)
+\]
+\[
+	p(x) \wedge p(x) \equiv p(x)
+\]
+
+\item \underline{Double Negation Law}
+\[
+	\neg (\neg p(x)) \equiv p(x)
+\]
+
+\item \underline{Commutative Laws}
+\[
+	p(x) \lor q(x) \equiv q(x) \lor p(x) 
+\]
+\[
+	p(x) \wedge q(x) \equiv q(x) \wedge p(x)
+\]
+
+\item \underline{Associative Laws}
+\[
+	\left ( p(x) \lor q(x) \right ) \lor r(x) \equiv  p(x) \lor \left ( q(x)  \lor r(x) \right )
+\]
+\[
+	\left ( p(x) \wedge q(x) \right ) \wedge r(x) \equiv  p(x) \wedge \left ( q(x)  \wedge r(x) \right )
+\]
+
+\item \underline{Distributive Laws}
+\[
+	p(x) \lor \left ( q(x)  \wedge r(x) \right ) \equiv \left ( p(x) \lor q(x) \right ) \wedge \left ( p(x) \lor r(x) \right )
+\]
+\[
+	p(x) \wedge \left ( q(x)  \lor r(x) \right ) \equiv \left ( p(x) \wedge q(x) \right ) \lor \left ( p(x) \wedge r(x) \right )
+\]
+
+\item \underline{De Morgan's Laws}
+\[
+	\neg \left ( p(x) \wedge q(x) \right ) \equiv \neg p(x) \lor \neg q(x)
+\]
+\[
+	\neg \left ( p(x) \lor q(x) \right ) \equiv \neg p(x) \wedge \neg q(x)
+\]
+
+\item \underline{Absorption Laws}
+\[
+	p(x) \lor \left ( p(x) \wedge q(x) \right ) \equiv p(x)
+\]
+\[
+	p(x) \wedge \left ( p(x) \lor q(x) \right ) \equiv p(x)
+\]
+
+\item \underline{Negation Laws}
+\[
+	p(x) \lor \neg p(x) \equiv T
+\]
+\[
+	p(x) \wedge \neg p(x) \equiv F
+\]
+
 \end{enumerate}
 
-\subsection{Inverse Trigonometry Derivatives}
+Definitions
+\begin{enumerate}
+\item \underline{Tautology} - When all cases in the statement are determined to be true, it is said to be a tautology.
+\item \underline{Contradiction}- When all cases in the statement are determined to be false, it is said to be a contradiction.
+\item \underline{Contingency} - When the statement is neither a tautology, nor a contradiction then it is said to be a contingency.
+\end{enumerate}
 
 \pagebreak
 
