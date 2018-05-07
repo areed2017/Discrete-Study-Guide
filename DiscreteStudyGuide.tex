@@ -17,6 +17,7 @@
 
 \DeclareMathOperator{\sech}{sech}
 \DeclareMathOperator{\csch}{csch}
+\newcommand{\powerset}{\raisebox{.15\baselineskip}{\Large\ensuremath{\wp}}}
  
 \newenvironment{theorem}[2][Theorem]{\begin{trivlist}
 \item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
@@ -319,14 +320,118 @@ Definitions
 \item \underline{Conjecture} - A statement that is being proposed to be a true statement, usually on the basis of some partial evidence, a heuristic argument, or the intuition of an expert. When a proof of a conjecture is found, the conjecture becomes a theorem. 
 \end{enumerate}
 
+\pagebreak
+
 \section{Sets, Functions, Sequences, Sums, and Matrices}
+
+\quad
+
+\quad
 
 \subsection{Sets}
 
-A set is an unordered collection of objects, called elements or members of the set. 
+\quad
+
+\noindent A set is an unordered collection of objects, called elements or members of the set. 
 
 We write $a \in A$ to denote that a is an element of the set A. 
 
 We write $a \notin A$ denotes that a is not an element of the set A
+
+\quad
+
+\noindent Well known sets include;
+
+$\N=\{ 0, 1, 2, 3, . . . \}$, the set of natural numbers
+$\Z = \{ . . . , -2, -1 ,0 ,1 ,2 , . . . \}$, the set of integers
+
+$\Z += \{1, 2, 3, . . . \}$, the set of positive integers
+
+$Q = \{p/q | p \in \Z,\ q \in \Z,\ and\ q \neq  0\}$, the set of rational numbers R, the set of 
+
+\indent \indent real numbers
+
+$\R+$, the set of positive real numbers
+
+$\C$, the set of complex numbers.
+
+$\Omega$, the universal set
+
+\quad
+
+\noindent \underline{Showing that A is a Subset of B} To show that $A \subseteq B$, show that if x belongs to A then x 
+\indent also belongs to B.
+
+\quad
+\noindent \underline{Showing that A is Not a Subset of B} To show that $A \nsubseteq B$, find a single x $\in$ A such that  
+
+\indent x $\notin$ B.
+
+\quad
+
+\noindent \underline{Showing Two Sets are Equal} To show that two sets A and B are equal, show that $A \subseteq B$ and $B \subseteq A$.
+
+\quad
+
+\noindent Every set (S) includes the following two sets;
+
+\[
+	S \subseteq S \quad \quad AND \quad \quad \emptyset \subseteq S
+\]
+
+\quad
+
+\noindent A set (S) is said to be a \underline{finite set} when it has exactly n distinct elements and n is said to be \indent the \underline{cardinality} of S, denoted as $|S|$
+
+\quad
+
+\noindent The \underline{Power Set} of a set (S) is the set of all subsets of S. It is denoted as $\powerset (S)$
+
+\quad
+
+\quad
+
+\subsection{Set Operations}
+
+\quad
+
+\noindent Let A and B be sets. The \underline{Cartesian product} of A and B, denoted as $ A \times B $, is the set of all \indent ordered pairs $(a, b)$ where $ a \in A$ and $b \in B$
+
+\quad
+
+\noindent Let A and B be sets. The \underline{union} of the sets A and B, denoted by $A \cup B$, is the set that \indent contains those elements that are either in A or in B, or in both.
+
+\quad
+
+\noindent Let A and B be sets. The \underline{intersection} of the sets A and B, denoted by A $ \cap $ B, is the set \indent containing those elements in both A and B.
+
+\quad
+
+\noindent Two sets are called \underline{disjoint} if their intersection is the empty set.
+
+\quad
+
+\noindent Let A and B be sets. The \underline{difference (complement)} of A and B, denoted by $A - B$, is the set \indent containing those elements that are in A but not in B.
+
+\quad
+
+\noindent The \underline{complement} of the set A, denoted by $\overline{\rm A}$, is the complement of A with respect to $\Omega$ . \indent Therefore, the complement of the set A is $\Omega$ - A.
+
+\quad
+
+\subsection{Set Identities}
+
+\begin{enumerate}
+\item \underline{Identity Laws}
+\item \underline{Domination Laws}
+\item \underline{Idempotent Laws}
+\item \underline{Complementation Laws}
+\item \underline{Commutative Laws}
+\item \underline{Associative Laws}
+\item \underline{Distributive Laws}
+\item \underline{De Morgan's Laws}
+\item \underline{Absorption Laws}
+\item \underline{Complement Laws}
+\end{enumerate}
 
 \end{document}
