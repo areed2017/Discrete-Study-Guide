@@ -527,11 +527,41 @@ Definitions:
 \subsection{Sequences and Summations}
 \subsection{Matrices}
 
-\section{Induction and Recusion}
-\subsection{Divisibility and Modular Arithmetic}
+\section{Induction and Recursion}
+
 \subsection{Mathematical Induction}
+
+\begin{enumerate}
+\item \underline{Principle of Mathematical Induction} To prove that $P(n)$ is true for all positive integers $n$, where $P(n)$ is a propositional function, we complete two steps, the base step and inductive step.
+\item \underline{Base Step} We verify that P (1) is true.
+\item \underline{Inductive Step} We show that the conditional statement $P(k) \rightarrow P(k + 1)$ is true for all positive integers k.
+\end{enumerate}
+
+\pagebreak
+
+Template for Proofs by Mathematical Induction
+
+\begin{enumerate}
+\item Express the statement that is to be proved in the form ?for all n ? b, P (n)? for a fixed integer b.
+\item Write out the words ?BasisStep.? Then show that $P(b)$ is true, taking care that the correct value of b is used. This completes the first part of the proof.
+\item Write out the words ?Inductive Step.?\item State, and clearly identify, the inductive hypothesis, in the form ?assume that $P(k)$ is true for an arbitrary fixed integer $k \geq b$.?
+\item State what needs to be proved under the assumption that the inductive hypothesis is true. That is, write out what $P(k + 1)$ says.\item Prove the statement $P(k + 1)$ making use the assumption $P(k)$. Be sure that your proof is valid for all integers $k$ with $k \leq b$, taking care that the proof works for small values of $k$, including $k = b$.\item Clearly identify the conclusion of the inductive step, such as by saying ?this completes the inductive step.?\item After completing the basis step and the inductive step, state the conclusion, namely that by mathematical induction, $P(n)$ is true for all integers $n$ with $n \geq b$.
+\end{enumerate}
+
 \subsection{Strong Induction}
+
+\begin{enumerate}
+\item \underline{Strong Induction} To prove that $P(n)$ is true for all positive integers $n$, where $P(n)$ is a propositional function, we complete two steps, the base step and inductive step.
+\item \underline{Base Step} We verify that P (1) is true.
+\item \underline{Inductive Step} We show that the conditional statement $\left [ P (1) \wedge P(2) \wedge . . . \wedge P(k) \right ]\rightarrow P(k + 1)$ is true for all positive integers k.
+\end{enumerate}
+
 \subsection{Recursive Algorithms}
+\begin{enumerate}
+\item \underline{Recursive} if it solves a problem by reducing it to an instance of the same problem with smaller input.
+\end{enumerate}
+
+
 
 \section{Counting}
 \subsection{The Pigeonhole Principle}
@@ -550,7 +580,15 @@ Definitions:
 
 \section{Relation}
 \subsection{Relations}
-\subsection{n-ary Relations}
-\subsection{Closures of Relations}
+
+\begin{enumerate}
+\item \underline{Binary Relation} from A to B is a subset of A × B.
+\item \underline{Relation} on a set A is a relation from A to A.
+\item \underline{Reflexive} if $(a, a) \int R$ for every element $a \in A.$
+\item \underline{Symmetric} if $(b, a) \in R$ whenever $(a, b) \in R$, for all $a, b \in A$
+\item \underline{Antisymmetric} A relation R on a set A such that for all $a, b \in A$, if $(a, b) \in R$ and $(b, a) \in R$, then $a = b$
+\item \underline{Transitive} if whenever $(a, b) \in R$ and $(b, c) \in R$, then $(a, c) \in R$, for all $a,b,c \in A$.
+\item \underline{equivalence relation} For a relation to be equivalent it must be reflexive, symmetric, and transitive.
+\end{enumerate}
 
 \end{document}
